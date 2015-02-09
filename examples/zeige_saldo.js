@@ -60,7 +60,7 @@ client.EstablishConnection(function(error){
 			}else{
 				console.log("Erfolgreich Verbunden");
 				// 4. Kontoumsätze für das 1. Konto(client.konten[0]) laden
-				client.MsgGetKontoUmsaetze(client.konten[0].sepa_data,null,null,function(error2,rMsg,data){
+				client.MsgGetSaldo(client.konten[0].sepa_data,null,null,function(error2,rMsg,data){
 					if(error){
 						console.log("Fehler beim laden der Umsätze: "+error2);
 					}else{
