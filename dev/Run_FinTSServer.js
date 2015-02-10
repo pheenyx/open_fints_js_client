@@ -27,7 +27,7 @@ var url = require("url");
 var fs = require('fs');
 
 var ipaddr  = process.env.IP || "127.0.0.1";//process.env.IP;
-var port      = process.env.PORT || 3000;//process.env.PORT;
+var port      = process.env.PORT || 4000;//process.env.PORT;
 var app = express();
 var myFINTSServer = new FinTSServer();
 app.configure(function () {
