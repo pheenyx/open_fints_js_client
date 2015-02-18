@@ -11,7 +11,7 @@ app.get('/', function (req, res) {
 			'94059421':{'blz':94059421,'url':"https://pt-v00-abn.s-hbci.de/fints30"},
 			"undefined":{'url':""}
 	};
-	var client = new FinTSClient(94059421,"smsbernd","12369",bankenliste);
+	var client = new FinTSClient(94059421,"smsbernd","-PIN-",bankenliste);
 	// Kleiner workaround um die Nachrichten im Cleartext abzugreifen
 	// wir tauschen einfach die funktion aus durch eine eigene
 	var response_output = "";

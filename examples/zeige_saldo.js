@@ -51,7 +51,7 @@ var bankenliste = {
 // PIN: 1234
 // Bankenliste siehe oben
 //var client = new FinTSClient(12345678,"test1","1234",bankenliste,log);
-var client = new FinTSClient(94059421,"smsbernd","12369",bankenliste,log);
+var client = new FinTSClient(94059421,"smsbernd","-PIN-",bankenliste,log);
 client.debug_mode = true;
 // 3. Verbindung aufbauen
 client.EstablishConnection(function(error){
